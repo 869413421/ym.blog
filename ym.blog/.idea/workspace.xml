@@ -366,23 +366,6 @@
             <path>
               <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="ym.blog" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym.blog" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym.blog" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ym.blog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -476,16 +459,15 @@
       <updated>1546950800523</updated>
       <workItem from="1546950802119" duration="218000" />
       <workItem from="1547265858369" duration="2906000" />
-      <workItem from="1547357355524" duration="8945000" />
+      <workItem from="1547357355524" duration="9192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12069000" />
+    <option name="totallyTimeSpent" value="12316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
