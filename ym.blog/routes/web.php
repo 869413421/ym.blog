@@ -35,3 +35,12 @@ Route::middleware('auth')->namespace('Admin')->group(function ()
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login', 'Auth\LoginController@login');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+// 在这一行下面
+Route::get('admin/upload', 'UploadController@index');
+
+// 添加如下路由
+Route::post('admin/upload/file', 'UploadController@uploadFile');
+Route::delete('admin/upload/file', 'UploadController@deleteFile');
+Route::post('admin/upload/folder', 'UploadController@createFolder');
+Route::delete('admin/upload/folder', 'UploadController@deleteFolder');
