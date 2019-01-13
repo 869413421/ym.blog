@@ -149,7 +149,7 @@ class UploadsManager
         $folder = $this->cleanFolder($folder);
 
         if ($this->disk->exists($folder)) {
-            return "Folder '$folder' already exists.";
+            return "目录 '$folder' 已经存在.";
         }
 
         return $this->disk->makeDirectory($folder);
@@ -166,8 +166,8 @@ class UploadsManager
             $this->disk->directories($folder),
             $this->disk->files($folder)
         );
-        if (! empty($filesFolders)) {
-            return "Directory must be empty to delete it.";
+        if (!empty($filesFolders)) {
+            return "目录不为空不允许删除.";
         }
 
         return $this->disk->deleteDirectory($folder);
@@ -180,8 +180,8 @@ class UploadsManager
     {
         $path = $this->cleanFolder($path);
 
-        if (! $this->disk->exists($path)) {
-            return "File does not exist.";
+        if (!$this->disk->exists($path)) {
+            return "文件不存在.";
         }
 
         return $this->disk->delete($path);
@@ -195,7 +195,7 @@ class UploadsManager
         $path = $this->cleanFolder($path);
 
         if ($this->disk->exists($path)) {
-            return "File already exists.";
+            return "文件已经存在.";
         }
 
         return $this->disk->put($path, $content);
