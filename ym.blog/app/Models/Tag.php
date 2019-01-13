@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Tag extends Model
 {
     protected $fillable = [
-        'tag', 'title', 'subtitle', 'page_image', 'meta_description','reverse_direction',
+        'tag', 'title', 'subtitle', 'page_image', 'meta_description', 'reverse_direction',
     ];
 
     /**
@@ -38,11 +38,25 @@ class Tag extends Model
             static::create([
                 'tag' => $tag,
                 'title' => $tag,
-                'subtitle' => 'Subtitle for '.$tag,
+                'subtitle' => 'Subtitle for ' . $tag,
                 'page_image' => '',
                 'meta_description' => '',
                 'reverse_direction' => false,
             ]);
         }
+    }
+
+    /**
+     * Return the index layout to use for a tag
+     *
+     * @param string $tag
+     * @param string $default
+     * @return string
+     */
+    public static function layout($tag, $default = 'blog.index')
+    {
+        $layout = static::where('tag', $tag)->get()->pluck('layout')->first();
+
+        return $layout ?: $default;
     }
 }
