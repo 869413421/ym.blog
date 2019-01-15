@@ -17,3 +17,5 @@ $server->on('close', function ($server, $fd) {
     echo '關閉鏈接';
     var_dump($server, $fd);
 });
+
+$server->start();
