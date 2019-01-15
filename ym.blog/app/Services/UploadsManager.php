@@ -39,12 +39,14 @@ class UploadsManager
         $breadcrumbs = array_slice($breadcrumbs, 0, -1);
 
         $subfolders = [];
-        foreach (array_unique($this->disk->directories($folder)) as $subfolder) {
+        foreach (array_unique($this->disk->directories($folder)) as $subfolder)
+        {
             $subfolders["/$subfolder"] = basename($subfolder);
         }
 
         $files = [];
-        foreach ($this->disk->files($folder) as $path) {
+        foreach ($this->disk->files($folder) as $path)
+        {
             $files[] = $this->fileDetails($path);
         }
 
@@ -73,13 +75,15 @@ class UploadsManager
         $folder = trim($folder, '/');
         $crumbs = ['/' => 'root'];
 
-        if (empty($folder)) {
+        if (empty($folder))
+        {
             return $crumbs;
         }
 
         $folders = explode('/', $folder);
         $build = '';
-        foreach ($folders as $folder) {
+        foreach ($folders as $folder)
+        {
             $build .= '/' . $folder;
             $crumbs[$build] = $folder;
         }
@@ -148,7 +152,8 @@ class UploadsManager
     {
         $folder = $this->cleanFolder($folder);
 
-        if ($this->disk->exists($folder)) {
+        if ($this->disk->exists($folder))
+        {
             return "目录 '$folder' 已经存在.";
         }
 
@@ -166,7 +171,8 @@ class UploadsManager
             $this->disk->directories($folder),
             $this->disk->files($folder)
         );
-        if (!empty($filesFolders)) {
+        if (!empty($filesFolders))
+        {
             return "目录不为空不允许删除.";
         }
 
@@ -180,7 +186,8 @@ class UploadsManager
     {
         $path = $this->cleanFolder($path);
 
-        if (!$this->disk->exists($path)) {
+        if (!$this->disk->exists($path))
+        {
             return "文件不存在.";
         }
 
@@ -194,7 +201,8 @@ class UploadsManager
     {
         $path = $this->cleanFolder($path);
 
-        if ($this->disk->exists($path)) {
+        if ($this->disk->exists($path))
+        {
             return "文件已经存在.";
         }
 
