@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/blog', 'BlogController@index')->name('blog.home');
 Route::get('/blog/{slug}', 'BlogController@showPost')->name('blog.detail');
 
+Route::get('contact', 'ContactController@showForm');
+Route::post('contact', 'ContactController@sendContactInfo');
+
 // 后台路由
 Route::get('/admin', function () {
     return redirect('/admin/post');
