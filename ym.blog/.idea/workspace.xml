@@ -35,10 +35,11 @@
         <counts>
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,7 +47,7 @@
           <entry key="env" value="1" />
           <entry key="js" value="3" />
           <entry key="json" value="2" />
-          <entry key="php" value="56" />
+          <entry key="php" value="57" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
@@ -55,7 +56,7 @@
           <entry key="Blade" value="16" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="40" />
+          <entry key="PHP" value="41" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="1" />
         </counts>
@@ -63,14 +64,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="1" />
-          <entry key="php" value="455" />
+          <entry key="php" value="663" />
           <entry key="scss" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="455" />
+          <entry key="PHP" value="663" />
           <entry key="SCSS" value="2" />
         </counts>
       </usages-collector>
@@ -125,11 +126,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/swoole.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/swoole_udp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -188,6 +198,7 @@
         <option value="$PROJECT_DIR$/database/factories/TagFactory.php" />
         <option value="$PROJECT_DIR$/config/blog.php" />
         <option value="$PROJECT_DIR$/public/swoole.php" />
+        <option value="$PROJECT_DIR$/public/swoole_udp.php" />
       </list>
     </option>
   </component>
@@ -322,25 +333,16 @@
           <expand>
             <path>
               <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="ym.blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ym.blog" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="swoole-ide-helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ym.blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="swoole-ide-helper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,17 +406,18 @@
       <workItem from="1547357355524" duration="10796000" />
       <workItem from="1547475906585" duration="2421000" />
       <workItem from="1547565013727" duration="2094000" />
+      <workItem from="1547640943527" duration="464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18435000" />
+    <option name="totallyTimeSpent" value="18899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -726,6 +729,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/swoole_udp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
