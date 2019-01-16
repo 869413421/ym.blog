@@ -47,7 +47,7 @@
           <entry key="env" value="1" />
           <entry key="js" value="3" />
           <entry key="json" value="2" />
-          <entry key="php" value="57" />
+          <entry key="php" value="58" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
@@ -56,7 +56,7 @@
           <entry key="Blade" value="16" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="41" />
+          <entry key="PHP" value="42" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="1" />
         </counts>
@@ -64,14 +64,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="1" />
-          <entry key="php" value="669" />
+          <entry key="php" value="855" />
           <entry key="scss" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="669" />
+          <entry key="PHP" value="855" />
           <entry key="SCSS" value="2" />
         </counts>
       </usages-collector>
@@ -135,11 +135,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/swoole_udp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="120">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/swooole_http.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -199,6 +208,7 @@
         <option value="$PROJECT_DIR$/config/blog.php" />
         <option value="$PROJECT_DIR$/public/swoole.php" />
         <option value="$PROJECT_DIR$/public/swoole_udp.php" />
+        <option value="$PROJECT_DIR$/public/swooole_http.php" />
       </list>
     </option>
   </component>
@@ -406,12 +416,12 @@
       <workItem from="1547357355524" duration="10796000" />
       <workItem from="1547475906585" duration="2421000" />
       <workItem from="1547565013727" duration="2094000" />
-      <workItem from="1547640943527" duration="1513000" />
+      <workItem from="1547640943527" duration="2563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19948000" />
+    <option name="totallyTimeSpent" value="20998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -734,8 +744,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/swoole_udp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/swooole_http.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
