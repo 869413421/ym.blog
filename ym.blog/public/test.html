@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var WsServer = "ws://129.204.59.183:8988";
+    var WebSocket = new WebSocket(WsServer);
+    WebSocket.onopen = function (evt) {
+        console.log('打开链接');
+    }
+
+    WebSocket.onclose = function (evt) {
+        console.log('关闭链接');
+    }
+
+    WebSocket.onmessage = function (evt) {
+        console.log(evt.data);
+    }
+
+    WebSocket.onerror = function (evt, err) {
+        console.log(err);
+    }
+
+</script>
+
+</body>
+</html>
