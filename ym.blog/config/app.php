@@ -226,4 +226,6 @@ return [
 
     ],
 
+    'log_level' => env('APP_LOG_LEVEL', 'error')
+
 ];
