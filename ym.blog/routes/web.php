@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function ()
+{
     return redirect('/blog');
 });
 
@@ -22,10 +23,12 @@ Route::get('contact', 'ContactController@showForm');
 Route::post('contact', 'ContactController@sendContactInfo');
 
 // 后台路由
-Route::get('/admin', function () {
+Route::get('/admin', function ()
+{
     return redirect('/admin/post');
 });
-Route::middleware('auth')->namespace('Admin')->group(function () {
+Route::middleware('auth')->namespace('Admin')->group(function ()
+{
     Route::resource('admin/post', 'PostController', ['except' => 'show']);
     Route::resource('admin/tag', 'TagController', ['except' => 'show']);
     Route::get('admin/upload', 'UploadController@index');
@@ -44,4 +47,8 @@ Route::middleware('auth')->namespace('Admin')->group(function () {
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login', 'Auth\LoginController@login');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+//测试路由
+Route::get('/file', 'Test\FileUploadController@index');
+Route::post('/file/upload', 'Test\FileUploadController@uploadFile');
 

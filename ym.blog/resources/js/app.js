@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+Vue.component('fileupload-component', require('./components/FileUploadComponent.vue'));
 
 //window.Vue = require('vue');
 
