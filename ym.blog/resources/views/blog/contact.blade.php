@@ -8,7 +8,7 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="page-heading">
                         <h1>联系我</h1>
-                        <span class="subheading">你有问题？我有答案。</span>
+                        <span class="subheading">有事发邮件</span>
                     </div>
                 </div>
             </div>
