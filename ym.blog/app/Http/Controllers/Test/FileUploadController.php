@@ -1,10 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Test;
 
-use App\Models\Post;
-use App\Models\Tag;
-use App\Services\PostService;
 use Illuminate\Http\Request;
 
 class FileUploadController extends Controller
