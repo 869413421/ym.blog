@@ -12,7 +12,7 @@
 <body>
 <div id="app">
     <div class="container">
-        <form>
+        <form action="test/vaildatetest">
             <div class="form-group">
                 <label>标题</label>
                 <input type="text" name="title" class="form-control" placeholder="输入标题" value="{{ old('title') }}">
