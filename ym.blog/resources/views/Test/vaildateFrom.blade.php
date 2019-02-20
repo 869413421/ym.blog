@@ -9,7 +9,7 @@
                 </ul>
             </div>
         @endif
-        <form action="{{ route('form.submit') }}" method="POST">
+        <form action="{{ route('test//vaildatetest') }}" method="POST">
             <div class="form-group">
                 <label>标题</label>
                 <input type="text" name="title" class="form-control" placeholder="输入标题" value="{{ old('title') }}">
