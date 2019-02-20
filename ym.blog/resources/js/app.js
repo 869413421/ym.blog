@@ -28,9 +28,9 @@ Vue.component('fileupload-component', require('./components/FileUploadComponent.
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// const app = new Vue({
-//     el: '#app'
-// });
+const app = new Vue({
+    el: '#app'
+});
 /**
  * Blog Javascript
  * Copied from Clean Blog v1.0.0 (http://startbootstrap.com)
