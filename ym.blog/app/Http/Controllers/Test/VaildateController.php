@@ -23,6 +23,7 @@ class VaildateController extends Controller
             'url.url' => '不是url',
             'max' => '超出了最大值'
         ]);
+        return response('验证通过');
     }
 
 }
