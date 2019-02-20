@@ -49,6 +49,19 @@ Route::post('/login', 'Auth\LoginController@login');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 //测试路由
-Route::get('/file', 'Test\FileUploadController@index');
-Route::post('/file/upload', 'Test\FileUploadController@uploadFile');
+Route::prefix('test')->group(function ()
+{
+    //上传测试
+    Route::get('/file', 'Test\FileUploadController@index');
+    Route::post('/file/upload', 'Test\FileUploadController@uploadFile');
+    //验证测试
+    Route::get('/vaildate', 'Test\VaildateController@index');
+    Route::post('/vaildatetest', 'Test\VaildateController@vailDate');
+});
+
+Route::fallback(function ()
+{
+    response('路由错误', 404);
+});
+
 
